@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>ErrorsBenchmark.ErrorHandlingBenchmark-20241229-190908</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 10 (10.0.19045.5247/22H2/2022Update)
+Intel Core i5-7400 CPU 3.00GHz (Kaby Lake), 1 CPU, 4 logical and 4 physical cores
+.NET SDK 8.0.204
+  [Host]     : .NET 8.0.4 (8.0.424.16909), X64 RyuJIT AVX2 [AttachedDebugger]
+  DefaultJob : .NET 8.0.4 (8.0.424.16909), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method           </th><th>Mean  </th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>UsingExceptions</td><td>61,719.63 &mu;s</td><td>843.365 &mu;s</td><td>788.884 &mu;s</td>
+</tr><tr><td>UsingSpecialReturnValue</td><td>31.67 &mu;s</td><td>0.440 &mu;s</td><td>0.411 &mu;s</td>
+</tr><tr><td>UsingResponseObject</td><td>652.63 &mu;s</td><td>12.937 &mu;s</td><td>23.328 &mu;s</td>
+</tr></tbody></table>
+</body>
+</html>
